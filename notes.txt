@@ -1,0 +1,123 @@
+Great — here’s a clean, practical rundown of everything you should know about just HTML (no CSS or JS), especially if you’re starting out or want a solid foundation.
+
+🧱 1. What HTML Is
+HTML (HyperText Markup Language) is the structure of a webpage. It defines what content appears and in what order — like headings, text, images, links, forms, etc.
+
+🏗️ 2. Basic Page Structure
+html
+Copy
+Edit
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page</title>
+  </head>
+  <body>
+    <!-- content goes here -->
+  </body>
+</html>
+<!DOCTYPE html> = tells the browser this is HTML5
+
+<html> = the whole document
+
+<head> = metadata (not visible on page)
+
+<body> = visible content
+
+🧩 3. Common Tags You Should Know
+📄 Text & Structure
+Tag	Purpose
+<h1> to <h6>	Headings (H1 is biggest)
+<p>	Paragraph
+<br>	Line break
+<hr>	Horizontal rule
+<div>	Generic container
+<span>	Inline container
+<strong>, <em>	Bold, italic emphasis
+
+🔗 Links & Images
+Tag	Purpose
+<a href="url">	Link
+<img src="img.jpg" alt="desc">	Image
+
+📦 Lists
+Tag	Purpose
+<ul>	Unordered list
+<ol>	Ordered list
+<li>	List item (used inside <ul> or <ol>)
+
+📋 Tables
+html
+Copy
+Edit
+<table>
+  <tr>
+    <th>Name</th><th>Age</th>
+  </tr>
+  <tr>
+    <td>Ethan</td><td>25</td>
+  </tr>
+</table>
+<table>: whole table
+
+<tr>: table row
+
+<th>: header cell
+
+<td>: data cell
+
+📝 Forms & Input
+Tag	Purpose
+<form>	Form wrapper
+<input type="text">	Text input
+<input type="submit">	Submit button
+<label>	Label for input
+<textarea>	Multi-line text
+<select><option>	Dropdown menu
+
+🧠 4. Attributes You’ll See Everywhere
+Attribute	Purpose
+id	Unique identifier
+class	Grouping / styling hook
+src	Image/video/audio source
+href	Link destination
+alt	Image description (for screen readers/SEO)
+type	Input field type
+name	Input identifier for forms
+value	Pre-filled value for input/button
+
+🔎 5. Semantic Tags
+These add meaning to your layout (good for SEO and accessibility):
+
+Tag	Use
+<header>	Top of the page or section
+<nav>	Navigation links
+<main>	Main content
+<section>	Section of content
+<article>	Independent article/post
+<footer>	Bottom of page/section
+
+🧪 6. Valid Nesting Rules
+Tags must be properly nested (no overlapping)
+
+Tags that open must be closed (except void tags like <br> or <img>)
+
+Don't put block elements inside inline tags (e.g., <div> inside <span> is bad)
+
+🔗 7. Useful Extras
+<!-- Comment --> — for notes in code
+
+&nbsp;, &lt;, &gt;, &copy; — HTML entities (special characters)
+
+<meta charset="UTF-8"> — supports most characters
+
+✅ Summary: What You Should Know About HTML
+How to build a basic page
+
+Most common tags and what they do
+
+Use of attributes like id, class, src, href
+
+How to build forms, tables, lists, and semantic layouts
+
+What’s visible (inside <body>) vs behind-the-scenes (inside <head>)
