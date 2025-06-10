@@ -5,13 +5,14 @@ const game = {
   XWon: false,
   tie: false,
   times: 0,
+  xWins: 0,
+  oWins: 0,
 };
 
 const checkWin = function () {
   if (game.times < 5) return false;
   const xStr = "images/X.png";
   const oStr = "images/O.png";
-  let cells = document.querySelectorAll("#grid li");
   /*
   1 2 3
   4 5 6
@@ -141,7 +142,17 @@ cells.forEach((cell) => {
           ? "O Won!"
           : "X Won !";
       }
+      if (game.OWon) game.oWins++;
+      if (game.XWon) game.xWins++;
+      let content = `<h6>X Wins : ${game.xWins}</h6>
+                     <h6>O Wins : ${game.oWins}</h6>
+                     <h6>Robot Wins : 0</h6>`;
+      document.querySelector("#stats").innerHTML = content;
+      return;
     }
+    document.getElementById("currPlayer").innerHTML = `Current Turn: ${
+      game.times % 2 ? "O Turn!" : "X Turn!"
+    }`;
   });
 });
 
@@ -157,4 +168,5 @@ document.getElementById("refresh").addEventListener("click", () => {
   game.tie = game.OWon = game.XWon = game.gameDone = false;
   game.times = 0;
   document.getElementById("winner").innerHTML = "";
+  document.getElementById("currPlayer").innerHTML = "Current Turn: X Turn!";
 });

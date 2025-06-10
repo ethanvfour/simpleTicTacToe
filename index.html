@@ -12,23 +12,33 @@
 <body>
   <header id="titleSpot">
     <div id="title">
-      <p style="color: rgb(0, 0, 0)">Tic Tac Toe!</p>
+      <h1 style="color: rgb(0, 0, 0)">Tic Tac Toe!</h1>
+      <h5 id="currPlayer">Current Turn: X Turn!</h5>
       <p id="winner"></p>
     </div>
   </header>
   <main id="mainTing">
-    <ul id="grid">
-      <li class="cell cell01"><img src="" /></li>
-      <li class="cell cell02"><img src="" /></li>
-      <li class="cell cell03"><img src="" /></li>
-      <li class="cell cell04"><img src="" /></li>
-      <li class="cell cell05"><img src="" /></li>
-      <li class="cell cell06"><img src="" /></li>
-      <li class="cell cell07"><img src="" /></li>
-      <li class="cell cell08"><img src="" /></li>
-      <li class="cell cell09"><img src="" /></li>
-    </ul>
-    <button id="refresh">Refresh</button>
+    <div id="statsAndGame">
+      <ul id="grid">
+        <li class="cell cell01"><img src="" /></li>
+        <li class="cell cell02"><img src="" /></li>
+        <li class="cell cell03"><img src="" /></li>
+        <li class="cell cell04"><img src="" /></li>
+        <li class="cell cell05"><img src="" /></li>
+        <li class="cell cell06"><img src="" /></li>
+        <li class="cell cell07"><img src="" /></li>
+        <li class="cell cell08"><img src="" /></li>
+        <li class="cell cell09"><img src="" /></li>
+      </ul>
+      <div id="stats">
+        <h6>X Wins : 0</h6>
+        <h6>O Wins : 0</h6>
+        <h6>Robot Wins : 0</h6>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center;">
+      <button id="refresh">Refresh</button>
+    </div>
   </main>
   <footer id="bottomSection">
     <p>Ethan Guillem</p>
